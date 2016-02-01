@@ -96,7 +96,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.72549 1 0.7</size>
+              <size>0.72549 1 0.743696</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -113,7 +113,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.72549 1 0.7</size>
+              <size>0.72549 1 0.743696</size>
             </box>
           </geometry>
           <material>
@@ -150,8 +150,8 @@
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -168,8 +168,8 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <material>
@@ -206,8 +206,8 @@
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -224,8 +224,8 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <material>
@@ -262,8 +262,8 @@
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -280,8 +280,8 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.03</radius>
-              <length>0.15</length>
+              <radius>0.0465445</radius>
+              <length>0.21488</length>
             </cylinder>
           </geometry>
           <material>
@@ -302,9 +302,9 @@
       <static>0</static>
     </model>
     <state world_name='default'>
-      <sim_time>212 391000000</sim_time>
-      <real_time>36 461019949</real_time>
-      <wall_time>1454357646 913035130</wall_time>
+      <sim_time>38 201000000</sim_time>
+      <real_time>65 786866004</real_time>
+      <wall_time>1452903341 353002719</wall_time>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <link name='link'>
@@ -315,36 +315,36 @@
         </link>
       </model>
       <model name='unit_box_1'>
-        <pose>0.867785 -0.003161 0.29752 -0.000358 -0.007583 0.000158</pose>
+        <pose>0.845863 1.5e-05 0.351964 9e-06 -0.002018 -1.5e-05</pose>
         <link name='link'>
-          <pose>0.867785 -0.003161 0.29752 -0.000358 -0.007583 0.000158</pose>
+          <pose>0.845863 1.5e-05 0.351964 9e-06 -0.002018 -1.5e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.150527 -0.10675 -29.5653 1.19493 1.02432 -3.04891</acceleration>
-          <wrench>-0.150527 -0.10675 -29.5653 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_Blue'>
-        <pose>0.689858 -0.005018 0.753643 0.000158 -0.007523 -0.006229</pose>
-        <link name='link'>
-          <pose>0.689858 -0.005018 0.753643 0.000158 -0.007523 -0.006229</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 -8.8 0 1 0</acceleration>
-          <wrench>-0 0 -8.8 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_Green'>
-        <pose>0.691518 -0.407392 0.753807 -0.000526 -0.008685 -0.004027</pose>
-        <link name='link'>
-          <pose>0.691518 -0.407392 0.753807 -0.000526 -0.008685 -0.004027</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 -8.8 0 1 0</acceleration>
-          <wrench>-0 0 -8.8 0 -0 0</wrench>
+          <acceleration>0.004974 0.004003 -29.3985 3.12047 -0.359734 3.14081</acceleration>
+          <wrench>0.004974 0.004003 -29.3985 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_cylinder_Red'>
-        <pose>0.691423 0.401783 0.753532 -0.000489 -0.009163 -0.0069</pose>
+        <pose>0.701716 0.400784 0.83095 -0.000312 -0.001838 0.002374</pose>
         <link name='link'>
-          <pose>0.691423 0.401783 0.753532 -0.000489 -0.009163 -0.0069</pose>
+          <pose>0.701716 0.400784 0.83095 -0.000312 -0.001838 0.002374</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -8.8 0 1 0</acceleration>
+          <wrench>0 0 -8.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_cylinder_Blue'>
+        <pose>0.701716 0.000784 0.83095 -0.000312 -0.001838 0.002374</pose>
+        <link name='link'>
+          <pose>0.701716 0.000784 0.83095 -0.000312 -0.001838 0.002374</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -8.8 0 1 0</acceleration>
+          <wrench>0 0 -8.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_cylinder_Green'>
+        <pose>0.701716 -0.400784 0.83095 -0.000312 -0.001838 0.002374</pose>
+        <link name='link'>
+          <pose>0.701716 -0.400784 0.83095 -0.000312 -0.001838 0.002374</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -8.8 0 1 0</acceleration>
           <wrench>0 0 -8.8 0 -0 0</wrench>
@@ -353,7 +353,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>1.1884 -1.40756 1.59306 -3.16906e-17 0.503643 2.1842</pose>
+        <pose>2.7185 -6.21297 4.44604 0 0.567643 1.8802</pose>
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
