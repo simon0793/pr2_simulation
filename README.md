@@ -9,6 +9,6 @@
 
 ## Dependencies
 <br>
-Openrave 0.9
-Trajopt
-ROS Indigo
+Openrave 0.9 <br>
+Trajopt <br>
+ROS Indigo <br>
