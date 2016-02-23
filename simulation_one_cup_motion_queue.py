@@ -34,6 +34,10 @@ RAISED_DEST_GREEN = [0.7, 0.0, 1.0]
 DEST_GREEN = [0.7, 0.0, 0.81]
 DEST_GREEN_REMOVED = [0.45, 0.0, 1.0]
 
+'''OUTPUT FILE TO WRITE TO'''
+FILENAME = '/home/simon/output.txt'
+FILE = None
+
 
 class SimpleArmState:
   ''' Class for representing just the state of PR2 arms (no additional objects)
@@ -87,6 +91,8 @@ class SimpleArmState:
       print newPosition
       self.valid = False
     else:
+      for newRightJoints in newRightJointsList:
+        writeToOutput(newRightJoints)
       self.rightArm.execute_joint_trajectory(newRightJointsList)
       self.valid = True
     rospy.sleep(.01)
@@ -213,24 +219,19 @@ class queuePlanner():
 
 
 def main():
+  global FILE
+  FILE = open(FILENAME, 'w')
+
   goalPositions = ["CLEAR", TARGET_GREEN, ALIGN_GRASP_GREEN, "GRASP", RAISED_GREEN, RAISED_DEST_GREEN, DEST_GREEN, "RELEASE", DEST_GREEN_REMOVED, "CLEAR"]
   qPlan = queuePlanner(goalPositions)
   qPlan.run()
 
-  '''MOVE ARMS OUT OF WAY'''
-  # state = state.raiseArms()
-  # state.rightArm.go_to_posture('side')
-  # state.leftArm.go_to_posture('side')
-  # state = state.alignGrippers()
+  FILE.close()
 
 
-  '''DROP ANY ITEMS AND MOVE ARMS OUT OF THE WAY'''
-  # state.rightArm.open_gripper()
-  # rospy.sleep(0.5)
-  # state = state.raiseArms()
-  # rospy.sleep(2)
-
-  print 'Goal Reached'
+def writeToOutput(data):
+  if FILE is not None:
+    FILE.write(str(data) + '\n')
   
   
 
